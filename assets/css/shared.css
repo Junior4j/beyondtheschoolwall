@@ -35,7 +35,7 @@ header {
 }
 
 .head-img img {
-  width: 32px;
+  width: 30px;
 }
 
 header a {
@@ -47,7 +47,7 @@ header a {
 }
 
 header a:hover {
-  color: var(--lightorange);
+  color: rgb(255, 170, 100);
 }
 
 /* NAVBAR EFFECT */
