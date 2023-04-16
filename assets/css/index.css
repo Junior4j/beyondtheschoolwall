@@ -65,6 +65,11 @@
   transition: all 0.4s ease-out;
 }
 
+
+.hero-link_2:hover{
+  box-shadow: 2px 2px 16px rgba(255, 151, 66, 0.8);
+}
+
 .product-container {
   padding: 30px;
   margin: 70px 0;
@@ -167,10 +172,11 @@
   padding: 20px;
   box-shadow: 0px 2px 8px rgba(34, 34, 34, 0.2);
   border-radius: 8px;
+  text-align: center;
 }
 
 .stage-head {
-  text-align: center;
+  margin: 10px 0;
 }
 
 .stage-head img {
@@ -240,6 +246,7 @@
 .listen-link:hover {
   background-color: rgb(255, 151, 66);
   color: #fff;
+  box-shadow: 2px 2px 16px rgba(255, 151, 66, 0.8);
 }
 
 /* Slideshow container */
@@ -381,6 +388,10 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
 
   .hero-link {
     font-size: 12px;
+  }
+
+  .hero-link_1 {
+    margin-bottom: 10px;
   }
 
   .product-container {
@@ -768,7 +779,7 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
     width: 300px;
     position: absolute;
     color: #fff;
-    top: 14rem;
+    top: 10rem;
     margin-left: 16px;
   }
 
@@ -921,7 +932,7 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
     width: 300px;
     position: absolute;
     color: #fff;
-    top: 14rem;
+    top: 10rem;
     margin-left: 16px;
   }
 
@@ -1053,10 +1064,6 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
 
   .hero-links {
     font-size: 12px;
-  }
-
-  .hero-link_1 {
-    margin-bottom: 10px;
   }
 
   .product-container {
