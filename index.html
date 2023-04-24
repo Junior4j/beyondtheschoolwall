@@ -20,7 +20,6 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <link rel="stylesheet" href="./assets/css/shared.css">
     <link rel="stylesheet" href="./assets/css/index.css">
@@ -54,8 +53,8 @@
             </li>
         </ul>
 
-        <div class="join">
-            <a href="#" class="join-link">see more <i class="fa fa-camera"></i></a>
+        <div class="seemore">
+            <a href="#" class="seemore-link">see more <i class="fa fa-camera"></i></a>
             <div class="hamburger">
                 <div class="line line_1"></div>
                 <div class="line line_2"></div>
@@ -108,7 +107,7 @@
                         <img src="./assets/resources/photos/product_1.jpeg" alt="">
                     </div>
                     <div class="product-content">
-                        <h4>how to start a trade-business as a student</h4>
+                        <h4>how to start a trade-business</h4>
                         <p>
                             We have 3 things you do with money!
 
@@ -429,6 +428,22 @@
 </body>
 
 <script src="./assets/js/shared.js"></script>
-<script src="./assets/js/slider.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+</script>
 
 </html>

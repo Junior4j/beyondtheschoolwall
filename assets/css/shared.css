@@ -81,19 +81,19 @@ header a {
   box-shadow: 0px 2px 8px rgba(29, 29, 29, 0.2);
 }
 
-.join {
+.seemore {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.join-link {
+.seemore-link {
   padding: 2px 8px;
   border-radius: 6px;
   margin-right: 4px;
 }
 
-.join-link:hover {
+.seemore-link:hover {
   background-color: rgba(255, 151, 66, 0.28);
   color: #fff;
   box-shadow: 0px 2px 8px rgba(29, 29, 29, 0.2);
@@ -137,6 +137,41 @@ header a {
 .hamburger:hover .line_3 {
   transform: translate(0px, 1px);
 } */
+
+.hero-links {
+  margin: 10px 0;
+}
+
+.hero-link_1 {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 14px;
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 20px;
+  border: 2px solid rgb(255, 151, 66);
+  transition: all 0.4s ease-out;
+}
+
+.hero-link_1:hover {
+  background-color: rgb(255, 151, 66);
+}
+
+.hero-link_2 {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #fff;
+  text-transform: capitalize;
+  background-color: rgba(255, 151, 66, 0.7);
+  border-radius: 20px;
+  transition: all 0.4s ease-out;
+}
+
+
+.hero-link_2:hover{
+  box-shadow: 2px 2px 16px rgba(255, 151, 66, 0.8);
+}
 
 footer {
   background-color: var(--black);
@@ -231,6 +266,12 @@ h3 {
   }
 }
 
+@media screen and (max-width: 860px) {
+  header {
+    padding: 16px 4%;
+  }
+}
+
 @media screen and (max-width: 767px) {
   header {
     align-items: center;
@@ -302,12 +343,10 @@ h3 {
   header {
     padding: 16px 4%;
   }
-
 }
 
 @media screen and (max-width: 380px) {
   header {
     padding: 16px 6%;
   }
-
 }
