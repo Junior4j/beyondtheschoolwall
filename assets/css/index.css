@@ -62,7 +62,6 @@
   border-radius: 20px;
   box-shadow: 0px 2px 8px rgba(34, 34, 34, 0.2);
   overflow: hidden;
-  transition: all 1s ease-in;
 }
 
 .product-img {
@@ -88,6 +87,7 @@
 .product-content p,
 .product-content a {
   font-size: 0px;
+  transition: all 30ms ease-in;
 }
 
 .product-card:hover p,
@@ -97,15 +97,19 @@
 
 .product-link {
   display: inline-block;
-  color: rgb(255, 151, 66);
-}
-
-.product-link:hover {
   color: rgb(250, 169, 103);
 }
 
+.product-card:hover .product-link {
+  margin-top: 10px;
+}
+
+.product-link:hover {
+  padding-left: 8px;
+}
+
 .rating {
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   font-size: 12px;
 }
 
@@ -136,7 +140,7 @@
   width: 300px;
   padding: 30px;
   box-shadow: 0px 2px 8px rgba(93, 93, 93, 0.2);
-  border-radius: 8px;
+  border-radius: 14px;
   text-align: center;
 }
 
@@ -154,7 +158,7 @@
 .stage-head h3 {
   text-transform: uppercase;
   font-size: 18px;
-  color: #222;
+  color: #333;
   font-weight: 600;
 }
 
@@ -165,8 +169,8 @@
 
 .listen-container {
   margin: 20px auto;
-  padding: 60px;
-  /* background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255, 151, 66)); */
+  /* padding: 60px; 
+   background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255, 151, 66)); */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -219,14 +223,17 @@
 }
 
 /* Slideshow container */
+
 .swiper {
   width: 100%;
   height: 100%;
   margin: 50px 0;
+    background-color: #333;
+  padding: 60px;
 }
 
-.swiper-slide {
-  /* text-align: center; font-size: 18px;
+  /* .swiper-slide {
+ text-align: center; font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -234,14 +241,12 @@
  
  swiper-button-next
 swiper-button-prev
-swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255, 151, 66)); */
-  background-color: #333;
-}
+swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255, 151, 66));
+} */
+
 
 .swiper-slide img {
   display: block;
-  /* width: 100%;
-  height: 100%; */
   object-fit: cover;
 }
 
@@ -281,7 +286,7 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
 
 .testimonial-container ul li {
   width: 300px;
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 30px;
   box-shadow: 0 2px 6px rgba(45, 45, 45, 0.2);
 }
@@ -421,7 +426,7 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
   }
 
   .listen-container {
-    padding: 70px;
+    /* padding: 70px; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -818,25 +823,22 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
   }
 
   .listen-img img {
-    width: 380px;
-    border-radius: 10px;
-    margin: 20px auto;
-    box-shadow: 2px 2px 16px rgba(255, 151, 66, 0.8);
+    width: 360px;
   }
 
   .listen-content {
     max-width: 100%;
     color: #fff;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 24px;
   }
 
   .listen-content h3 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .listen-content p {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .testimonial-container {
@@ -893,7 +895,7 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
   }
 
   .products {
-    width: 680px;
+    width: 600px;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     align-items: center;
@@ -919,11 +921,13 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
   }
 
   .stages {
-    max-width: 600px;
-    display: grid;
-    margin: 30px auto;
-    grid-template-columns: repeat(2, 1fr);
+    max-width: 400px;
+    grid-template-columns: repeat(1, 1fr);
     gap: 16px;
+  }
+
+  .stage{
+    width: 400px;
   }
 
   .stage-head {
@@ -944,22 +948,27 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
     font-size: 14px;
   }
 
+  .swiper{
+    padding:40px;
+  }
+
+  .listen-container{
+    grid-template-columns: 100%;
+  }
+
   .listen-img {
     max-width: 100%;
   }
 
   .listen-img img {
-    width: 380px;
-    border-radius: 10px;
-    margin: 20px auto;
-    box-shadow: 2px 2px 16px rgba(255, 151, 66, 0.8);
+    width: 80%;
   }
 
   .listen-content {
     max-width: 100%;
     color: #fff;
-    text-align: left;
-    margin-left: 20px;
+    text-align: center;
+    margin-left: 0;
   }
 
   .listen-content h3 {
@@ -980,14 +989,12 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
 
   .testimonial-container ul {
     width: 600px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
+    grid-template-columns: repeat(1, 1fr);
     margin: 20px auto;
   }
 
   .testimonial-container ul li {
-    width: 300px;
+    width: 600px;
     border-radius: 8px;
     padding: 26px;
     box-shadow: 0 2px 6px rgba(45, 45, 45, 0.2);
@@ -1049,18 +1056,6 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
     font-size: 22px;
   }
 
-  .stages {
-    max-width: 300px;
-    display: grid;
-    margin: 30px auto;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 16px;
-  }
-
-  .stage-head {
-    text-align: center;
-  }
-
   .stage-head img {
     width: 20px;
   }
@@ -1075,6 +1070,10 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
     font-size: 14px;
   }
 
+  .swiper{
+    padding: 30px;
+  }
+
   .listen-container {
     padding: 30px;
     display: grid;
@@ -1086,16 +1085,12 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
   }
 
   .listen-img img {
-    width: 480px;
-    border-radius: 10px;
-    margin: 20px auto;
-    box-shadow: 2px 2px 16px rgba(255, 151, 66, 0.8);
+    width: 100%;
   }
 
   .listen-content {
     max-width: 100%;
     color: #fff;
-    text-align: left;
   }
 
   .listen-content h3 {
@@ -1189,18 +1184,6 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
     font-size: 22px;
   }
 
-  .stages {
-    max-width: 300px;
-    display: grid;
-    margin: 30px auto;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 16px;
-  }
-
-  .stage-head {
-    text-align: center;
-  }
-
   .stage-head img {
     width: 20px;
   }
@@ -1217,8 +1200,6 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
 
   .listen-container {
     padding: 30px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
   }
 
   .listen-img {
@@ -1226,16 +1207,12 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
   }
 
   .listen-img img {
-    width: 400px;
-    border-radius: 10px;
-    margin: 20px auto;
-    box-shadow: 2px 2px 16px rgba(255, 151, 66, 0.8);
+    width: 360px;
   }
 
   .listen-content {
     max-width: 100%;
     color: #fff;
-    text-align: left;
   }
 
   .listen-content h3 {
@@ -1294,12 +1271,16 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
     font-size: 12px;
   }
 
+  .hero-link_1 {
+    margin-bottom: 8px;
+  }
+
   .product-container {
     padding: 10px;
   }
 
   .products {
-    width: 360px;
+    width: 300px;
     margin: 10px auto;
   }
 
@@ -1314,30 +1295,21 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
 
   .stages {
     max-width: 300px;
-    display: grid;
-    margin: 30px auto;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 16px;
   }
 
-  .stage-head {
-    text-align: center;
+  .stage{
+    width: 300px;
   }
 
-  .stage-head img {
-    width: 20px;
-  }
 
   .stage-head h3 {
     text-transform: uppercase;
     font-size: 17px;
     color: #222;
   }
-
+  
   .listen-container {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    padding: 0px;
   }
 
   .listen-img {
@@ -1345,20 +1317,16 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
   }
 
   .listen-img img {
-    width: 320px;
-    border-radius: 10px;
-    margin: 20px auto;
-    box-shadow: 2px 2px 16px rgba(255, 151, 66, 0.8);
+    width: 300px;
   }
 
   .listen-content {
     max-width: 100%;
     color: #fff;
-    text-align: left;
   }
 
   .listen-content h3 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .testimonial-container {

@@ -96,11 +96,11 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
-                    </div>
+                        </div>
                         <p>
                             Make your scribe gift and learn how to communicate thoughts as contents and stories for
                             personal and coporate flow. <br>
-                            <a href="#" class="product-link">visit our store</a>
+                            <a href="#" class="product-link">visit our store &#x2192</a>
                         </p>
                     </div>
                 </div>
@@ -125,7 +125,7 @@
                             make money by value exchanged<br>
                             multiply money by investment<br>
                             manage money by administration. <br>
-                            <a href="#" class="product-link">visit our store</a>
+                            <a href="#" class="product-link">visit our store &#x2192</a>
 
                         </p>
                     </div>
@@ -149,7 +149,7 @@
                             Your productivity as man is directly related to your intelligence(Ability to solve a
                             problem)<br>
                             Learn how to develop your intelligence quotient now! <br>
-                            <a href="#" class="product-link">visit our store</a>
+                            <a href="#" class="product-link">visit our store &#x2192</a>
                         </p>
                     </div>
                 </div>
@@ -438,22 +438,27 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script>
     var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 0,
-  loop: true,
-    autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-      },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+        slidesPerView: 1,
+        spaceBetween: 50,
+        loop: true,
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            360: {
+                spaceBetween: 60,
+            }
+        }
+    });
 </script>
 
 </html>

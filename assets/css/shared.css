@@ -91,6 +91,9 @@ header a {
   padding: 2px 8px;
   border-radius: 6px;
   margin-right: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .seemore-link:hover {
@@ -103,6 +106,7 @@ header a {
   padding: 6px;
   border-radius: 20px;
   background-color: rgba(52, 49, 46, 0.4);
+  margin-left: 3px;
 }
 
 .hamburger {
@@ -155,6 +159,7 @@ header a {
 
 .hero-link_1:hover {
   background-color: rgb(255, 151, 66);
+  box-shadow: 2px 2px 16px rgba(255, 151, 66, 0.8);
 }
 
 .hero-link_2 {
@@ -268,7 +273,10 @@ h3 {
 
 @media screen and (max-width: 860px) {
   header {
-    padding: 16px 4%;
+    padding: 16px 2%;
+  }
+  header a{
+    font-size: 13px;
   }
 }
 
