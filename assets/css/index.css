@@ -60,9 +60,9 @@
 .product-card {
   width: 360px;
   border-radius: 20px;
-  box-shadow: 0px 2px 6px rgba(34, 34, 34, 0.2);
+  box-shadow: 0px 2px 8px rgba(34, 34, 34, 0.2);
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 1s ease-in;
 }
 
 .product-img {
@@ -75,8 +75,12 @@
 }
 
 .product-content {
+  background-color: #fff;
   width: 360px;
   padding: 10px;
+  /* position: absolute;
+  left: 0;
+  bottom: -60px; */
 }
 
 .product-content h4 {
@@ -104,7 +108,7 @@
 }
 
 .rating {
-  margin-top: 6px;
+  margin-bottom: 6px;
   font-size: 12px;
 }
 
@@ -805,6 +809,10 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
     font-size: 14px;
   }
 
+  /* .listen-container{
+    padding: 50px;
+  } */
+
   .listen-img {
     max-width: 100%;
   }
@@ -1261,7 +1269,7 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 360px) {
   .hero {
     height: 500px;
   }
@@ -1271,7 +1279,7 @@ swiper-pagination{} background: linear-gradient(70deg, rgb(27, 27, 27), rgb(255,
   }
 
   .hero-content {
-    width: 340px;
+    width: 300px;
     position: absolute;
     color: #fff;
     top: 8rem;

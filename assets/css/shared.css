@@ -345,7 +345,7 @@ h3 {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 360px) {
   header {
     padding: 16px 6%;
   }
