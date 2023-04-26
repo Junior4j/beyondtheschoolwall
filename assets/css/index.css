@@ -78,9 +78,6 @@
   background-color: #fff;
   width: 360px;
   padding: 10px;
-  /* position: absolute;
-  left: 0;
-  bottom: -60px; */
 }
 
 .product-content h4 {
@@ -137,25 +134,28 @@
 
 .stage {
   width: 300px;
-  height: 200px;
-  padding: 20px;
-  box-shadow: 0px 2px 8px rgba(34, 34, 34, 0.2);
+  padding: 30px;
+  box-shadow: 0px 2px 8px rgba(93, 93, 93, 0.2);
   border-radius: 8px;
   text-align: center;
 }
 
 .stage-head {
-  margin: 10px 0;
+  margin: 6px 0;
 }
 
 .stage-head img {
   width: 24px;
+  box-shadow: 0px 2px 8px rgba(34, 34, 34, 0.1);
+  border-radius: 100px;
+  margin-bottom: 4px;
 }
 
 .stage-head h3 {
   text-transform: uppercase;
   font-size: 18px;
   color: #222;
+  font-weight: 600;
 }
 
 .stage p {
